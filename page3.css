@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.upper-container{
+    width: 50%;
+    height: 10%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.upper-container1{
+    width: 35%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+#tasks{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#lists{
+    font-size: 4rem;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.upper-container2{
+    width: 30%;
+    height: 100%;
+    padding-top: 20px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#addlist{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    opacity: 0.5;
+    padding-top: 25px;
+}
+#circle{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+}
+
+.card1{
+    margin-top: 10px;
+    border: 1.5px solid red;
+    height: 45vh;
+    width: 15%;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px grey;
+    margin-left: 20px;
+}
+.card2{
+    margin-top: 10px;
+    border: 1.5px solid red;
+    height: 45vh;
+    width: 15%;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px grey;
+    margin-left: -180px;
+}
+.card3{
+    margin-top: 10px;
+    border: 1.5px solid red;
+    height: 45vh;
+    width: 15%;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px grey;
+    margin-left: -180px;
+}
+
+.div1{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-size: 25px;
+    width: 85%;
+    text-align: left;
+    height: 15%;
+    color: darkred;
+    border-bottom: 1px solid black;
+}
+
+.div2{
+    width: 90%;
+    height: 10%;
+    font-size: 22px;
+    color: deepskyblue;
+    text-align: right;
+    position: absolute;
+    top: 35%;
+    font-weight: bold;
+    text-decoration: line-through;
+    visibility: none;
+}
+
+.div3{
+    width: 90%;
+    height: 10%;
+    position: absolute;
+    top: 52%;
+    text-align: left;
+    font-size: 22px;
+}
+
+#check{
+    width: 20px;
+    height: 19px;
+    margin-left: 10px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.notshow{
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.pop-up{
+    position: absolute;
+    left: 37%;
+    top: 30%;
+    height: 25vh;
+    width: 27%;
+    border: 1.5px solid red;
+    border-radius: 10px;
+    color: red;
+    font-size: 18px;
+    box-shadow: 3px 3px 10px gray;
+    background-color: white;
+    padding: 20px;
+}
+
+#add-new{
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+.pop-upbar{
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+    width: 80%;
+    height: 25%;
+    border: 1.5px solid red;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.pop-up-button{
+    width: 25%;
+    height: 20%;
+    margin-top: 25px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    left: 150px;
+    
+}
+
+@media(max-width:600px) {
+    .upper-container{
+        width: 80%;
+    }
+    .upper-container1{
+        width: 80%;
+    }
+
+    #addlist{
+        display: none;
+    }
+
+    #circle{
+        right: 20px;
+    }
+
+    .div2{
+        display: none;
+    }
+
+    .div3{
+        display: none;
+    }
+
+    .div1{
+        border: none;
+        color: gray;
+    }
+
+    .card1{
+        width: 90%;
+        height: 23vw;
+        margin-top: 30px;
+    }
+    .card2{
+        width: 90%;
+        height: 23vw;
+        margin-top: 30px;
+    }
+    .card3{
+        width: 90%;
+        height: 23vw;
+        margin-top: 30px;
+    }
+}
+
+.direction{
+    position: relative;
+    top: 100px;
+}
+
+.previous{
+    position: absolute;
+    left: 730px;
+    bottom: 20px;
+    opacity: 0.8;
+    color: black;
+}
+
+.next{
+    position: absolute;
+    left: 800px;
+    bottom: 20px;
+    opacity: 0.8;
+    color: black;
+}
+
+.page-number{
+    position: absolute;
+    left: 750px;
+    bottom: 21px;
+    opacity: 0.8;
+}
+
+.home-button{
+    color: black;
+    position: absolute;
+    left: 700px;
+    bottom: 21px;
+    opacity: 0.7;
+}
